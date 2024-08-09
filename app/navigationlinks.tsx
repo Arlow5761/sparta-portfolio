@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import Image from "next/image";
+import {usePathname} from "next/navigation";
 
 class LinkType {
     name: string = "";
@@ -38,9 +38,18 @@ export const links : LinkType[] = [
 ];
 
 function NavigationLink(link : LinkType) {
+    const pathname = usePathname();
+    let style = "flex flex-row text-2xl text-center items-center h-20 max-w-80 p-2 landscape:text-left";
+    let textStyle = "flex flex-row items-center gap-2";
+
+    if (pathname === link.address) {
+        style = style + " bg-white"
+        textStyle = textStyle + " text-black"
+    };
+
     return (
-        <div className="flex flex-row text-2xl text-center items-center h-20 max-w-80 p-2 landscape:text-left">
-            <Link href={link.address} className="flex flex-row items-center gap-2" >
+        <div className={style}>
+            <Link href={link.address} className={textStyle}>
                 <span className="material-symbols-outlined text-3xl">{link.icon}</span>
                 {link.name}
             </Link>
