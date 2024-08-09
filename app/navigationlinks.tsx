@@ -8,6 +8,29 @@ class LinkType {
     address: string = "";
 }
 
+export const links : LinkType[] = [
+    {
+        name: "Profile",
+        address: "/"
+    },
+    {
+        name: "Hobbies",
+        address: "/hobbies"
+    },
+    {
+        name: "Skills",
+        address: "/skills"
+    },
+    {
+        name: "Projects",
+        address: "/projects"
+    },
+    {
+        name: "Achievements",
+        address: "/achievements"
+    }
+];
+
 function NavigationLink(link : LinkType) {
     return (
         <div className="flex flex-row text-2xl text-center items-center h-20 max-w-80 p-2 landscape:text-left">
@@ -19,29 +42,6 @@ function NavigationLink(link : LinkType) {
 }
 
 export function NavigationLinks() {
-    const links : LinkType[] = [
-        {
-            name: "Profile",
-            address: "/"
-        },
-        {
-            name: "Hobbies",
-            address: "/hobbies"
-        },
-        {
-            name: "Skills",
-            address: "/skills"
-        },
-        {
-            name: "Projects",
-            address: "/projects"
-        },
-        {
-            name: "Achievements",
-            address: "/achievements"
-        }
-    ];
-
     const linkItems = links.map((link) => {
         return NavigationLink(link);
     });
