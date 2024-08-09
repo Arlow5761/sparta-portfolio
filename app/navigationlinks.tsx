@@ -6,35 +6,42 @@ import Image from "next/image";
 class LinkType {
     name: string = "";
     address: string = "";
+    icon: string = "";
 }
 
 export const links : LinkType[] = [
     {
         name: "Profile",
-        address: "/"
+        address: "/",
+        icon: "account_circle"
     },
     {
         name: "Hobbies",
-        address: "/hobbies"
+        address: "/hobbies",
+        icon: "celebration"
     },
     {
         name: "Skills",
-        address: "/skills"
+        address: "/skills",
+        icon: "handyman"
     },
     {
         name: "Projects",
-        address: "/projects"
+        address: "/projects",
+        icon: "work"
     },
     {
         name: "Achievements",
-        address: "/achievements"
+        address: "/achievements",
+        icon: "trophy"
     }
 ];
 
 function NavigationLink(link : LinkType) {
     return (
         <div className="flex flex-row text-2xl text-center items-center h-20 max-w-80 p-2 landscape:text-left">
-            <Link href={link.address} className="flex flex-row items-center" >
+            <Link href={link.address} className="flex flex-row items-center gap-2" >
+                <span className="material-symbols-outlined text-3xl">{link.icon}</span>
                 {link.name}
             </Link>
         </div>
