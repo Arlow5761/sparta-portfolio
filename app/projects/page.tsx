@@ -40,7 +40,7 @@ function RenderProjects() {
 export default function Projects() {
     return (
         <div className="w-full h-full flex justify-center items-center">
-            <div className="bg-gray-900 rounded-xl flex flex-wrap justify-center items-center h-[32rem] w-[40rem] p-8 gap-24">
+            <div className="bg-gray-900 rounded-xl flex flex-wrap justify-center items-center h-[32rem] w-[40rem] p-8 gap-x-24 gap-y-10">
                 <RenderProjects/>
             </div>
         </div>
