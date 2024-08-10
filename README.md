@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Arlow's Portfolio Website (For SPARTA)
 
-## Getting Started
+![en](https://img.shields.io/badge/lang-en-blue)  
 
-First, run the development server:
+A portfolio website made for an assignment during SPARTA. It contains Arlow's name, picture, description, hobbies, skills, previous projects, previous accomplishments, and contacts.  
+  
+The deployed website can be accessed here:  
+https://sparta-portfolio-arlow.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Used Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- Next.js
+- Tailwind CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Run
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Make sure Node.js is already installed
+2. Clone the repository
+3. Open a terminal in the cloned repository directory
+4. Run `npm install` to install all dependencies
+5. Run `npm run dev` to start a development server or `npm run start` to start a production server
+6. Access the website at the address given after starting a server
 
-## Learn More
+## Bonuses
 
-To learn more about Next.js, take a look at the following resources:
+|Bonus | Status|
+|-|-|
+|Deployment | Finished|
+|Responsive Layout | Finished|
+|Use of Database | Not Attempted|
+|Creativity | Partially Finished|
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Challenges
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+One of the major difficulties of creating this website is writing the code to properly set up the position and layout of different elements within the website. Since I, as the creator, have little to no experience with web development, I haven't gotten used with how things are typically done yet, particularly on writing html and css. Even so, this project have been a beneficial learning experience that has helped me to grow further.
 
-## Deploy on Vercel
+## Identity
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Name : Arlow Emmanuel Hergara
+NIM : 19623042
+Clan : L
