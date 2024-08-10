@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="text-xs md:portrait:text-lg lg:landscape:text-lg">
       <head></head>
       <body className={inter.className + " h-screen w-full landscape:flex"}>
         <SectionHeader/>

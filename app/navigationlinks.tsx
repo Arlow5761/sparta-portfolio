@@ -39,7 +39,7 @@ export const links : LinkType[] = [
 
 function NavigationLink(link : LinkType) {
     const pathname = usePathname();
-    let style = "flex flex-row text-2xl text-center items-center h-20 max-w-80 p-2 landscape:text-left";
+    let style = "flex flex-row text-lg text-center items-center h-20 max-w-80 p-2 landscape:text-left";
     let textStyle = "flex flex-row items-center gap-2";
 
     if (pathname === link.address) {
@@ -50,7 +50,7 @@ function NavigationLink(link : LinkType) {
     return (
         <div className={style}>
             <Link href={link.address} className={textStyle}>
-                <span className="material-symbols-outlined text-3xl">{link.icon}</span>
+                <span className="material-symbols-outlined text-xl">{link.icon}</span>
                 {link.name}
             </Link>
         </div>
