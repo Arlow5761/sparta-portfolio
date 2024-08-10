@@ -37,6 +37,6 @@ Salah satu kesulitan dari membuat website ini adalah menulis kode yang dapat men
 
 ## Identitas
 
-Nama : Arlow Emmanuel Hergara
-NIM : 19623042
-Klan : L
+Nama : Arlow Emmanuel Hergara  
+NIM : 19623042  
+Klan : L  

@@ -37,6 +37,6 @@ One of the major difficulties of creating this website is writing the code to pr
 
 ## Identity
 
-Name : Arlow Emmanuel Hergara
-NIM : 19623042
-Clan : L
+Name : Arlow Emmanuel Hergara  
+NIM : 19623042  
+Clan : L  
