@@ -39,7 +39,7 @@ export const links : LinkType[] = [
 
 function NavigationLink(link : LinkType) {
     const pathname = usePathname();
-    let style = "flex flex-row text-lg text-center items-center h-20 w-40 p-2 landscape:text-left";
+    let style = "flex flex-row text-lg justify-center text-center items-center h-20 w-40 p-2 gap-2 landscape:text-left landscape:w-full";
     let textStyle = "flex flex-row items-center gap-2";
 
     if (pathname === link.address) {
@@ -48,19 +48,17 @@ function NavigationLink(link : LinkType) {
     };
 
     return (
-        <div className={style}>
-            <Link href={link.address} className={textStyle}>
+        <Link key={link.name} href={link.address} className={textStyle}>
+            <div className={style}>
                 <span className="material-symbols-outlined text-xl">{link.icon}</span>
                 {link.name}
-            </Link>
-        </div>
+            </div>
+        </Link>
     );
 }
 
 export function NavigationLinks() {
-    const linkItems = links.map((link) => {
-        return NavigationLink(link);
-    });
+    const linkItems = links.map(NavigationLink);
 
     return (
         <div className="flex justify-center flex-wrap flex-grow bg-gray-900 w-full max-w-full h-fit landscape:flex-col landscape:flex-nowrap landscape:w-64 landscape:h-full">
