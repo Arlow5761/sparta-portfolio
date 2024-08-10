@@ -43,8 +43,10 @@ function NavigationLink(link : LinkType) {
     let textStyle = "flex flex-row items-center gap-2";
 
     if (pathname === link.address) {
-        style = style + " bg-white"
-        textStyle = textStyle + " text-black"
+        style = style + " bg-white";
+        textStyle = textStyle + " text-black";
+    } else {
+        textStyle = textStyle + " text-white";
     };
 
     return (

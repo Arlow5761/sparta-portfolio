@@ -20,7 +20,7 @@ export default function RootLayout({
       <head></head>
       <body className={inter.className + " h-screen w-full landscape:flex"}>
         <SectionHeader/>
-        <div className="block h-3/5 landscape:w-3/5 landscape:h-full">
+        <div className="block h-3/5 text-white bg-black landscape:w-3/5 landscape:h-full">
           {children}
         </div>
       </body>
