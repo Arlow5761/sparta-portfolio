@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="bg-gray-900 rounded-xl flex flex-col h-[32rem] w-[40rem] p-8 gap-4">
-        <div className="w-full text-center text-7xl mb-4">
+        <div className="w-full text-center text-6xl mb-4">
           Arlow (5761)
         </div>
         <div className="flex gap-4">
@@ -17,7 +17,7 @@ export default function Home() {
             sizes="100vw"
             className="min-h-48 min-w-48 h-48 w-48 object-cover"
           />
-          <div className="h-full text-xl text-center content-center">
+          <div className="h-full text-base text-center content-center">
             My name is Arlow Emmanuel Hergara and people usually call me Arlow. I am a student at Institut Teknologi Bandung majoring in Informatics.
           </div>
         </div>
